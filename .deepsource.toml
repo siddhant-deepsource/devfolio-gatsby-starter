@@ -1,0 +1,20 @@
+version = 1
+
+exclude_patterns = [
+    "src/pages/**",
+    "static/**",
+    "gatsby-config.js"
+]
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+
+  [analyzers.meta]
+  environment = [
+    "nodejs",
+    "browser"
+  ]
+  style_guide = "airbnb"
+  plugins = ["react"]
+  module_system = "es-modules"
